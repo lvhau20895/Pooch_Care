@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar-rigth {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    top: 25px;
+    z-index: 111;
+    
+}
+.navbar-rigth .icon {
+    float: right;
+    text-align: center;
+    width: 100%;
+    
+}
+.navbar-rigth .icon .icon-back {
+    font-size: 20px;
+    color: #fff;
+    background-color: #939499;
+    padding: 15px 18px;
+    border-radius: 50%;
+}
+.navbar-rigth .icon .icon-back:hover {
+    color: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.navbar-rigth .icon .icon-end {
+    background-color: #189a46;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 200px;
+    padding: 18px 20px;
+    border-radius: 50%;
+}
+.navbar-rigth .item {
+    background-color: #000;
+    color:#939499;
+    padding: 30px 10px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+}
+.navbar-rigth .item .back:hover ,.Download:hover ,.Buy:hover {
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.navbar-rigth .item .Download {
+    margin: 30px 0;
+}
+.navbar-rigth .item i {
+    font-size: 20px;
+}
+.navbar-rigth .item p {
+    font-weight: 600;
+}
+/* carousel  */
+.carousel {
+    height: 250px;
+    background: url("../img/banner4.jpg") center / cover no-repeat;
+    margin-top: 90px;
+    position: relative;
+    z-index: 1;
+}
+.carousel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .container {
+    position: relative;
+    top: 30%;
+}
+
+.carousel .carousel-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel .carousel-text h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.carousel .carousel-text .breadcrumb {
+    transform: translateX(15px);
+    font-size: 1.2em;
+}
+
+.carousel .breadcrumb-item a {
+    color: #189A46;
+}
+
+.carousel .breadcrumb-item+.breadcrumb-item::before {
+    display: none;
+}
+/* portfolio  */
+#portfolio .container {
+    padding:0 50px;
+    padding-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#portfolio .container hr {
+    margin: 0;
+}
+#portfolio .container .row {
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+#portfolio .container .row .col img {
+    width: 100%;
+    border-radius: 20px;
+}
+#portfolio .container .row .col .card {
+    border: none;
+    display: block !important;
+    width: 100% !important;
+}
+#portfolio .container .row .col .card .card-body {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+
+}
+#portfolio .container .row .col .card .card-title {
+    color: #f53626;
+    font-size: 20px;
+    font-weight: 400;
+}
+#portfolio .container .row .col .card .card-subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000 !important;
+}
+#portfolio .container .row .col .card .card-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 25px 0;
+} 
+#portfolio .container .row .col .card .card-body a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #189A46;
+}
+#portfolio .container .row .col .card .card-body a:hover {
+    color: #189A46;
+    transition: 0.4s;
+}
